@@ -12,7 +12,7 @@ Each folder represents a topic or concept I learned.
 1. Navigate to the topic folder:
    ```bash
    cd Day2-HTTP-Server
-s
-    Run the project:
 
-node server.js
+2. Run the project:
+
+       node server.js
