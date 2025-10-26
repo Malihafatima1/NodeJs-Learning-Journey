@@ -97,13 +97,7 @@ async function createFile() {
 
 createFile();
 
-🗂️ Suggested Repository Name
 
-nodejs-file-handling-demo
-
-It clearly represents the topic and is professional for GitHub.
-
-📄 File Structure Suggestion
 nodejs-file-handling-demo/
 │
 ├── README.md              # (this markdown file)
@@ -121,13 +115,6 @@ ChatGPT said:
 Perfect 👍
 Here’s the full set of files you can directly upload to your GitHub repo:
 
-🗂️ Project Name:
-
-nodejs-file-handling-demo
-
-📄 1. README.md
-
-Save this as README.md in your project root:
 
 # 📘 Node.js File Handling — Synchronous & Asynchronous
 
@@ -290,5 +277,3 @@ Repository name:
 
 nodejs-file-handling-demo
 
-✅ Commit Message Example
-Initial commit: Added file handling examples (sync, async, and promise)
