@@ -47,7 +47,7 @@ allows testing via REST Client or a simple HTML form.
 ### 1️⃣ Clone the repository
 
 ``` bash
-git clone https://github.com/your-username/SessionBasedLogin.git
+git clone https://github.com/Malihafatima1/NodeJs-Learning-Journey/tree/main/Day14-Authentication/SessionBasedAuth
 cd SessionBasedLogin
 ```
 
