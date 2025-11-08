@@ -1,0 +1,11 @@
+###1️⃣ Login Request
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"user",
+    "password":"password"
+}
+
+### 2️⃣ Access Dashboard
+GET http://localhost:3000/dashboard
