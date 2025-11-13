@@ -50,8 +50,8 @@ Passwordless-Login-System/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Passwordless-Login-System.git
-cd Passwordless-Login-System
+git clone https://github.com/Malihafatima1/NodeJs-Learning-Journey/Day18-MagicLink
+cd Day18-MagicLink
 ```
 
 ### 2️⃣ Install Dependencies
