@@ -1,0 +1,53 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #5d5fef, #42a5f5);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #5d5fef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4b4ded;
+  }
+  
