@@ -50,8 +50,8 @@ Passwordless-Login-System/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Passwordless-Login-System.git
-cd Passwordless-Login-System
+git clone https://github.com/Malihafatima1/NodeJs-Learning-Journey/edit/main/Day-17PasswordlessBasedAuth/magic-link
+cd magic-link
 ```
 
 ### 2️⃣ Install Dependencies
@@ -87,16 +87,6 @@ Visit 👉 `http://localhost:3000`
 
 ---
 
-## 📸 Screenshots
-
-### Login Page
-![Login Page](screenshots/login.png)
-
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
-
----
-
 ## 🧠 What I Learned
 
 - How to implement secure, passwordless authentication  
@@ -106,17 +96,11 @@ Visit 👉 `http://localhost:3000`
 
 ---
 
-## 🎥 Demo Video
-
-🎬 Watch the full walkthrough here: [YouTube Link](https://youtu.be/TAr9k1DhrzM)
-
----
-
 ## 🧑‍💻 Author
 
 **Maliha Fatima**  
 📍 MCA Student | Aspiring Web Developer  
-🌐 [LinkedIn](https://linkedin.com/in/maliha-fatima)  
+🌐 [LinkedIn](https://linkedin.com/in/maliha-dev)  
 💌 Email: malihafatima6360@gmail.com  
 
 ---
