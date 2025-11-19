@@ -30,6 +30,28 @@ router.get("/",(req,res)=>{
 res.send(JSON.stringify({users},null,4));//This line is to be replaced with actual return value
 });
 
+//Create an endpoint for sorting users by date of birth.
+//fucction to convert a date sring in the format "dd-mm-yyyy" to a Date object
+function getDateFormString(strDate){
+  let[dd,mm,yyy]=strDate.split('-');
+  return new Date(yyy + '/' + mm + '/' + dd);
+}
+//Define a route handler for get req to the "/sort" endpoint
+router.get("/sort",(req,res)=>{
+  //sort the users array by DOB  in ascending orde
+
+  let sorted_users=users.sort(function(a,b){
+    let d1=getDateFormString(a.DOB);
+    let d2=getDateFormString(b.DOB);
+    return d1 - d2;
+  });
+ 
+  
+  //send the sorted_users array as the response to the clinent
+  res.send(sorted_users)
+})
+
+
 // GET by specific ID reques,t: Retrieve a single user with email ID
 router.get("/:email",(req,res)=>{
 // Copy the code here
@@ -99,4 +121,14 @@ router.delete("/:email", (req, res) => {
   res.send(`User with the email  ${email} deleted.`)//This line is to be replaced with actual return value
 });
 
+//create an endpoint  for getting all users with a  particular LastName 
+router.get("/lastName/:lastName",(req,res)=>{
+const lastName=req.params.lastName;
+const filter_lastName=users.filter((user)=>user.lastName==lastName);
+res.send(filter_lastName);
+})
+
+
 module.exports=router;
+
+
