@@ -15,7 +15,8 @@ res.render('SubmitUser',req.body);
 
 app.get('/users',(req,res)=>{
     const users=['Maliha','Afifa','Maha','Hira']
-    res.render('Users',{users:users})
+   
+    res.render('Users',{users:users,isLogin:false});
 })
 app.listen(5000,()=>{
    console.log("Server is running on 5000") }
