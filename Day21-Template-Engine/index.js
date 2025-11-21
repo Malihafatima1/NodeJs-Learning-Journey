@@ -1,10 +1,22 @@
 import express from "express";
 const app=express();
 
-
+app.use(express.urlencoded({extended:false}))
 app.set('view engine','ejs')
-app.get("/",(req,res)=>{
-    res.render('home',{name:'Maliha Fatima',Channnel:'LetsCode Youtube Channel', age:23})
+
+app.get('/add-user',(req,res)=>{
+res.render('addUser');
+});
+
+app.post('/submit-user',(req,res)=>{
+    console.log(req.body);
+res.render('SubmitUser',req.body);
 })
 
-app.listen(5000,()=>"Server is running on 5000")
+app.get('/users',(req,res)=>{
+    const users=['Maliha','Afifa','Maha','Hira']
+    res.render('Users',{users:users})
+})
+app.listen(5000,()=>{
+   console.log("Server is running on 5000") }
+)
