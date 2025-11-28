@@ -1,0 +1,60 @@
+<div 
+  style="
+    max-width:500px; 
+    margin:40px auto; 
+    padding:25px; 
+    border-radius:12px; 
+    background:#f8f9fa; 
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    font-family:Arial;
+  "
+>
+  <h1 
+    style="
+      text-align:center; 
+      color:#333; 
+      margin-bottom:20px;
+    "
+  >
+    <%= student.name %>
+  </h1>
+
+  <p style="font-size:18px; margin-bottom:10px;">
+    <strong>Course:</strong> <%= student.course %>
+  </p>
+
+  <p style="font-size:18px; margin-bottom:20px;">
+    <strong>Age:</strong> <%= student.age %>
+  </p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a 
+      href="/students/<%= student._id %>/edit" 
+      style="
+        background:#FF9800; 
+        color:white; 
+        padding:10px 18px; 
+        text-decoration:none; 
+        border-radius:8px; 
+        font-weight:bold;
+        margin-right:10px;
+      "
+    >
+      Edit
+    </a>
+
+    <a 
+      href="/students"
+      style="
+        background:#2196F3; 
+        color:white; 
+        padding:10px 18px; 
+        text-decoration:none; 
+        border-radius:8px; 
+        font-weight:bold;
+      "
+    >
+      Back to All Students
+    </a>
+  </div>
+</div>
