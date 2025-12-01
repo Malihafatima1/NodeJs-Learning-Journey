@@ -1,0 +1,19 @@
+{
+  "name": "day-26-display-mongodb-data-on-ui-using-node.js-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0",
+    "nodemon": "^3.1.11"
+  }
+}
