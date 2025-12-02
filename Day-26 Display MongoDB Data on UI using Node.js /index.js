@@ -7,8 +7,9 @@ const dbName = "School";
 
 const client = new MongoClient(url);
 const app = express();
-
 let db;
+
+
 
 // 1️⃣ Connect to MongoDB once
 async function connectDB() {
@@ -25,38 +26,41 @@ app.use(express.json());
 // 3️⃣ EJS
 app.set("view engine", "ejs");
 
+//   
+
+app.get('/add-student',(req,res)=>{
+  res.render('add-student')
+})
+
+app.post('/add-student', async (req, res) => {
+    
+  const { name, age, course } = req.body;
+
+  if (!name || !age || !course) {
+    console.log("❌ Data missing!");
+    return res.send("Form data missing");
+  }
+
+  try {
+    const result = await db.collection("students").insertOne(req.body
+);
+
+    console.log("Insert Result:", result);
+  } catch (err) {
+    console.log("❌ Insert Error:", err);
+  }
+
+  res.redirect("/display");
+});
+
+
 // 4️⃣ Home route (GET)
-app.get("/", async (req, res) => {
+app.get("/display", async (req, res) => {
   const students = await db.collection("students").find().toArray();
   res.render("student", { students });
 });
 
-// 5️⃣ Add student (POST)
-app.post("/add-student", async (req, res) => {
-    console.log("POST Request Received!!!");
-    console.log("Request Body:", req.body);  // DEBUG
-  
-    const { name, age, course } = req.body;
-  
-    if (!name || !age || !course) {
-      console.log("❌ Data missing!");
-      return res.send("Form data missing");
-    }
-  
-    try {
-      const result = await db.collection("students").insertOne({
-        name,
-        age: Number(age),
-        course,
-      });
-  
-      console.log("Insert Result:", result);
-    } catch (err) {
-      console.log("❌ Insert Error:", err);
-    }
-  
-    res.redirect("/");
-  });
+
   
 
 // 6️⃣ Server
